@@ -1,0 +1,19 @@
+{
+  "name": "myward-limpopo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MyWard Limpopo civic-awareness PWA for Polokwane ward boundaries.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "build": "node scripts/build-app.js",
+    "preview": "node scripts/dev-server.js dist 4173",
+    "data:filter-polokwane": "node scripts/filter-polokwane-wards.js",
+    "data:scrape-councillors": "node scripts/scrape-polokwane-councillors.js",
+    "data:join-polokwane": "node scripts/join-polokwane-wards.js",
+    "data:validate": "node scripts/validate-polokwane-data.js",
+    "data:build": "npm run data:filter-polokwane && npm run data:scrape-councillors && npm run data:join-polokwane && npm run data:validate",
+    "docker:up": "docker compose up --build"
+  },
+  "devDependencies": {}
+}

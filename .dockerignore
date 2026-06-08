@@ -1,0 +1,8 @@
+.git
+dist
+node_modules
+npm-debug.log
+.DS_Store
+data/limpopo/polokwane/ward-councillors-page.html
+MDB_Wards_2020_-8644686055062113979.geojson
+SA_Wards2020+1 Metadata.pdf

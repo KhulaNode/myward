@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://limpopo.myward.khulanode.com/sitemap.xml

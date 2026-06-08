@@ -1,0 +1,7 @@
+node_modules/
+npm-debug.log
+.DS_Store
+
+# Large source boundary file. Keep it locally when rebuilding data, but do not commit it.
+MDB_Wards_2020_-8644686055062113979.geojson
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyWard Limpopo | Polokwane ward map and boundaries</title>
+    <meta
+      name="description"
+      content="MyWard Limpopo helps residents explore Polokwane ward boundaries, councillor details, and municipal ward areas in Limpopo."
+    />
+    <link rel="canonical" href="https://limpopo.myward.khulanode.com/" />
+    <meta property="og:site_name" content="MyWard Limpopo" />
+    <meta property="og:title" content="MyWard Limpopo | Polokwane ward boundaries" />
+    <meta
+      property="og:description"
+      content="Find your ward in Polokwane and explore municipal ward boundaries in Limpopo with an independent civic-awareness map by KhulaNode."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://limpopo.myward.khulanode.com/" />
+    <meta property="og:image" content="https://limpopo.myward.khulanode.com/assets/og-myward-limpopo.svg" />
+    <meta name="theme-color" content="#155e63" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/icons/icon.svg" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "MyWard Limpopo",
+        "url": "https://limpopo.myward.khulanode.com/",
+        "applicationCategory": "CivicTechnology",
+        "operatingSystem": "Any",
+        "publisher": {
+          "@type": "Organization",
+          "name": "KhulaNode"
+        },
+        "description": "MyWard Limpopo is an independent civic-awareness map by KhulaNode that helps residents explore ward boundaries and understand which areas fall within each ward."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Main navigation">
+        <a class="brand" href="/" data-link>
+          <span class="brand-mark">MW</span>
+          <span>MyWard Limpopo</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+        <div class="site-menu" id="site-menu">
+          <a href="/" data-link>Home</a>
+          <a href="/map" data-link>Map</a>
+          <a href="/about" data-link>About</a>
+          <a href="/sources" data-link>Sources</a>
+          <a href="/disclaimer" data-link>Disclaimer</a>
+          <a href="/privacy" data-link>Privacy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main"></main>
+
+    <footer class="site-footer">
+      <p>MyWard Limpopo is an independent civic-awareness project by KhulaNode.</p>
+      <p><a href="/disclaimer" data-link>Read the disclaimer</a></p>
+    </footer>
+
+    <script src="/app-config.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
