@@ -9,4 +9,4 @@ services:
       VITE_APP_BASE_URL: ${VITE_APP_BASE_URL:-https://limpopo.myward.khulanode.com}
       VITE_GOOGLE_ADSENSE_CLIENT_ID: ${VITE_GOOGLE_ADSENSE_CLIENT_ID:-}
     ports:
-      - "8080:80"
+      - "80"
