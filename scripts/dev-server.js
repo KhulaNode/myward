@@ -32,7 +32,8 @@ http.createServer((request, response) => {
   if (url.pathname === '/app-config.js' && !fs.existsSync(filePath)) {
     const config = {
       baseUrl: process.env.VITE_APP_BASE_URL || 'https://limpopo.myward.khulanode.com',
-      adsenseClientId: process.env.VITE_GOOGLE_ADSENSE_CLIENT_ID || ''
+      adsenseClientId: process.env.VITE_GOOGLE_ADSENSE_CLIENT_ID || '',
+      googleMapsApiKey: process.env.VITE_GOOGLE_MAPS_API_KEY || ''
     };
     send(response, 200, `window.MYWARD_CONFIG = ${JSON.stringify(config)};\n`, 'text/javascript');
     return;

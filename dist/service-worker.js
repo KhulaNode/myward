@@ -1,4 +1,4 @@
-const CACHE_NAME = 'myward-limpopo-v2';
+const CACHE_NAME = 'myward-limpopo-v3';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -7,6 +7,10 @@ const APP_SHELL = [
   '/app-config.js',
   '/manifest.webmanifest',
   '/assets/icons/icon.svg',
+  '/img/mywardlogo.png',
+  '/img/mywardtext.png',
+  '/terria/config.json',
+  '/terria/init/myward-polokwane.json',
   '/data/limpopo/polokwane/polokwane-wards.enriched.geojson'
 ];
 

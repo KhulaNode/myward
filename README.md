@@ -44,9 +44,11 @@ Optional configuration:
 ```bash
 VITE_APP_BASE_URL=http://localhost:8080
 VITE_GOOGLE_ADSENSE_CLIENT_ID=
+VITE_GOOGLE_MAPS_API_KEY=
 ```
 
 Local defaults live in `.env`. Set `VITE_APP_BASE_URL=https://limpopo.myward.khulanode.com` for production builds.
+Set `VITE_GOOGLE_MAPS_API_KEY` to enable the Google Map Tiles API roadmap basemap. Without it, the app falls back to the clean CARTO civic basemap.
 
 ## Docker Compose
 

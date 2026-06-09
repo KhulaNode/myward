@@ -1,0 +1,61 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "MyWard Limpopo",
+      "id": "myward-limpopo",
+      "isOpen": true,
+      "items": [
+        {
+          "type": "group",
+          "name": "Polokwane Local Municipality",
+          "id": "myward-limpopo/polokwane",
+          "isOpen": true,
+          "items": [
+            {
+              "type": "geojson",
+              "id": "myward-limpopo/polokwane/wards",
+              "name": "Polokwane wards with councillor details",
+              "url": "/data/limpopo/polokwane/polokwane-wards.enriched.geojson",
+              "dataUrl": {
+                "type": "direct",
+                "url": "/data/limpopo/polokwane/polokwane-wards.enriched.geojson"
+              },
+              "metadataUrls": [
+                {
+                  "title": "Polokwane ward councillor source",
+                  "url": "https://www.polokwane.gov.za/ward-councillors/"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Dataset status",
+                  "content": "Current pilot layer for Polokwane only. Later slices will add Makhado, Greater Tzaneen, Mogalakwena, Modimolle-Mookgophong, and Fetakgomo Tubatse."
+                },
+                {
+                  "name": "Source caution",
+                  "content": "This is an independent civic-awareness layer joined from MDB ward boundaries and public municipal councillor data."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "workbench": [
+    "myward-limpopo/polokwane/wards"
+  ],
+  "initialCamera": {
+    "north": -23.55,
+    "south": -24.25,
+    "east": 30.05,
+    "west": 28.75
+  },
+  "homeCamera": {
+    "north": -23.55,
+    "south": -24.25,
+    "east": 30.05,
+    "west": 28.75
+  }
+}

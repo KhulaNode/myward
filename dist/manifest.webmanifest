@@ -5,9 +5,15 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f8fbf9",
-  "theme_color": "#155e63",
+  "background_color": "#f7fbf5",
+  "theme_color": "#004f49",
   "icons": [
+    {
+      "src": "/img/mywardlogo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "/assets/icons/icon.svg",
       "sizes": "any",

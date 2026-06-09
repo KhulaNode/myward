@@ -9,6 +9,7 @@ const publicDir = path.join(repoRoot, 'public');
 const distDir = path.join(repoRoot, 'dist');
 const baseUrl = process.env.VITE_APP_BASE_URL || 'https://limpopo.myward.khulanode.com';
 const adsenseClientId = process.env.VITE_GOOGLE_ADSENSE_CLIENT_ID || '';
+const googleMapsApiKey = process.env.VITE_GOOGLE_MAPS_API_KEY || '';
 const enrichedDataPath = path.join(publicDir, 'data', 'limpopo', 'polokwane', 'polokwane-wards.enriched.geojson');
 
 function copyDir(source, destination) {
@@ -23,7 +24,7 @@ function copyDir(source, destination) {
 
 fs.rmSync(distDir, { recursive: true, force: true });
 copyDir(publicDir, distDir);
-fs.writeFileSync(path.join(distDir, 'app-config.js'), `window.MYWARD_CONFIG = ${JSON.stringify({ baseUrl, adsenseClientId })};\n`);
+fs.writeFileSync(path.join(distDir, 'app-config.js'), `window.MYWARD_CONFIG = ${JSON.stringify({ baseUrl, adsenseClientId, googleMapsApiKey })};\n`);
 
 if (fs.existsSync(enrichedDataPath)) {
   const wards = JSON.parse(fs.readFileSync(enrichedDataPath, 'utf8'));

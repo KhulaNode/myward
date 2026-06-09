@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "appName": "MyWard Limpopo",
+    "supportEmail": "",
+    "feedbackUrl": "",
+    "globalDisclaimer": {
+      "confirmationRequired": false,
+      "title": "Independent civic-awareness data",
+      "message": "MyWard Limpopo is not an official government, municipal, MDB, IEC, or political-party platform. Verify official matters with the relevant public body."
+    }
+  },
+  "initializationUrls": [
+    "terria/init/myward-polokwane.json"
+  ],
+  "initFragmentPaths": [
+    "terria/init"
+  ]
+}
